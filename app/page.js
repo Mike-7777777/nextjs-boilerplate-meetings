@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import App from './App';  // 假设App.js和page.js在同一目录下
 
 export default function Home() {
   return (
@@ -9,6 +10,10 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
         </p>
+        <div>
+          <h1>我的会议安排</h1>
+          <App />
+        </div>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
