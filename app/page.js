@@ -12,11 +12,7 @@ export default function Home() {
     const formData = new FormData(form);
 
     // You can pass formData as a fetch body directly:
-    fetch('/some-api', { method: form.method, body: formData });
-
-    // Or you can work with it as a plain object:
-    const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
+    fetch('/api/posts', { method: form.method, body: formData });
   }
 
   return (
@@ -32,7 +28,7 @@ export default function Home() {
       <div className={styles.center}>
       
       {/* 新用户的时间表提交到服务器 */}
-      <form action="/send-data-here" method="post">
+      <form onSubmit={handleSubmit} method="post">
         {/* name */}
         <label for="name">
           Your name: <input type="text" id="first" name="name" />
@@ -41,12 +37,12 @@ export default function Home() {
         <label for="slot">
           Time Slot: 
           <input type="checkbox" name="slot_1_8" /> 8-12
-          <input type="checkbox" name="slot_1_8" /> 12-14
-          <input type="checkbox" name="slot_1_8" /> 14-16
-          <input type="checkbox" name="slot_1_8" /> 16-18
-          <input type="checkbox" name="slot_1_8" /> 18-20
-          <input type="checkbox" name="slot_1_8" /> 20-22
-          <input type="checkbox" name="slot_1_8" /> 22-24
+          <input type="checkbox" name="slot_1_12" /> 12-14
+          <input type="checkbox" name="slot_1_14" /> 14-16
+          <input type="checkbox" name="slot_1_16" /> 16-18
+          <input type="checkbox" name="slot_1_18" /> 18-20
+          <input type="checkbox" name="slot_1_20" /> 20-22
+          <input type="checkbox" name="slot_1_22" /> 22-24
         </label>
 
         <button type="reset">Reset</button>
