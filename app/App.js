@@ -14,14 +14,11 @@ export default function MyForm() {
     }
 
     return (
-        // 新用户的时间表提交到服务器
         <form onSubmit={handleSubmit} method="post">
-            {/* name */}
             <label for="name">
             Your name: <input type="text" id="first" name="name" />
             </label>
-            {/* time slot,  7 x 7 = 49 */}
-            <label for="slot">
+            <label>
             Time Slot: 
             <input type="checkbox" name="slot_1_8" /> 8-12
             <input type="checkbox" name="slot_1_12" /> 12-14
@@ -32,7 +29,6 @@ export default function MyForm() {
             <input type="checkbox" name="slot_1_22" /> 22-24
             </label>
 
-            <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
     );

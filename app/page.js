@@ -7,9 +7,9 @@ export default function Home() {
     <main className={styles.main}>
       {/* // TODO 显示当前时间表（从服务器获取） */}
       {/* 上传表单 */}
-      <div className={styles.center}>
-        <App />
-      </div>
+      {/* <div className={styles.center}> */}
+      <App />
+      {/* </div> */}
     </main>
   )
 }
