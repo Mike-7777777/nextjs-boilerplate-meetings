@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import App from './App';  // 假设App.js和page.js在同一目录下
+import App from './app';  // 假设App.js和page.js在同一目录下
 
 export default function Home() {
   return (
