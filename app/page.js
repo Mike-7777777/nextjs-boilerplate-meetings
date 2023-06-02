@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div>
       <h1>我的会议安排</h1>
-      <App />
     </div>
   )
 }
