@@ -1,3 +1,5 @@
+'use client';
+
 export default function MyForm() {
     function handleSubmit(e) {
         // Prevent the browser from reloading the page
