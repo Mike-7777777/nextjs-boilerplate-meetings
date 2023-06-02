@@ -11,7 +11,8 @@ export default function Home() {
           <code className={styles.code}>app/page.js</code>
         </p>
       </div>
-      // TODO 显示当前时间表（从服务器获取）
+
+      {/* // TODO 显示当前时间表（从服务器获取） */}
 
       <div className={styles.center}>
         <App />
